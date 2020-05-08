@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:id="@+id/scrollView2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/text_profile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="My Profile" />
+
+                <RadioGroup
+                    android:id="@+id/group_gender"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/text_gender"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Gender" />
+
+                    <RadioButton
+                        android:id="@+id/gender_male"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Male" />
+
+                    <RadioButton
+                        android:id="@+id/gender_female"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Female" />
+
+                </RadioGroup>
+
+                <RadioGroup
+                    android:id="@+id/group_age"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/text_age"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Age" />
+
+                    <RadioButton
+                        android:id="@+id/age_0_17"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="0-17" />
+
+                    <RadioButton
+                        android:id="@+id/age_18_44"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="18-44" />
+
+                    <RadioButton
+                        android:id="@+id/age_45_64"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="45-65" />
+
+                    <RadioButton
+                        android:id="@+id/age_65_74"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="65-74" />
+
+                    <RadioButton
+                        android:id="@+id/age_75"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="75+" />
+
+                </RadioGroup>
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/text_conditions"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Pre-existing Conditions" />
+
+                    <CheckBox
+                        android:id="@+id/cb_cardio"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Cardiovascular Disease" />
+
+                    <CheckBox
+                        android:id="@+id/cb_diabetes"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Diabetes" />
+
+                    <CheckBox
+                        android:id="@+id/cb_resp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Chronic respiratory disease" />
+
+                    <CheckBox
+                        android:id="@+id/cb_hypertension"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Hypertension" />
+
+                    <CheckBox
+                        android:id="@+id/cb_cancer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Cancer" />
+                </RadioGroup>
+            </LinearLayout>
+        </ScrollView>
+
+        <Button
+            android:id="@+id/button_explanation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="Check"
+            android:text="Set Profile and Explain Risk Score"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>
